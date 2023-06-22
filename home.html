@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anker latam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
+  <link rel="icon" href="https://lh3.googleusercontent.com/RrgZ_Vltz9KYCJB_izLBCv4Fln768zAa6CXrjVFc2gr2-pUHrB-9lpA9KJC_pqgmn2TXpgl-TEqnATwufpHi51ykQsucgWjq51EJCV6rO3sUHekJ">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://kit.fontawesome.com/c3fb4304c8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav id="nav"class="navbar navbar-expand-md navbar-light bg-white">
+      <a href="/" class="navbar-brand mx-2">
+        <img src="images/logo.png" class="img-fluid" style="max-height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/#wave">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#info">Informes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#equipo">Equipo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="image-container">
+            <img src="images/barco.jpg" alt="imagen de barco" class="d-block w-100">
+            <div class="carousel-caption d-md-block">
+              <h3>Asesoría Macroeconómica y Financiera</h3>
+              <p>Alcance sus objetivos</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image-container">
+            <img src="images/pcs.jpg" alt="imagen de analisis en pc" class="d-block w-100">
+            <div class="carousel-caption d-md-block">
+              <h3>Informes y alertas Macro-Financieros</h3>
+              <p>Tome decisiones</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image-container">
+            <img src="images/edificios.jpg" alt="imagen de edificios" class="d-block w-100">
+            <div class="carousel-caption d-md-block">
+              <h3>Charlas Personalizadas</h3>
+              <p>Haga crecer su negocio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id='wave' class="d-flex">
+      <div class="container py-2">
+        <div class="row py-4 my-2 justify-content-between">
+          <div class="col-md-6 text-center align-self-center order-md-1 order-2">
+            <h3 class="text-white shadow-text">QUIÉNES SOMOS</h3>
+            <p class="text-white shadow-text">Brindamos servicios de asesoría macroeconómica y financiera a medida, aprovechando nuestra experiencia combinada en los mercados financieros globales, la industria bancaria global, la consultoría y la oficina pública.</p>
+          </div>
+          <div class=""></div>
+          <div class="col-md-5 text-center my-4 order-md-2 order-1">
+            <img src="images/quehacemos.jpg" alt="analisis en tablet" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-md-5 text-center order-md-3 order-3">
+            <img src="images/edificio2.jpg" alt="edificios" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-md-6 text-center align-self-center order-md-4 order-4">
+            <h3 class="text-white shadow-text mt-2">QUE BUSCAMOS</h3>
+            <p class="text-white shadow-text">Nuestro enfoque se centra en los intereses individuales de cada uno de nuestros clientes, con el fin de proporcionarles una cartera óptima que se adapte a su perfil de inversión.</p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1682005190">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="" id="info" style="margin-top: 90px;">
+      <h1 class="text-center">Informes</h1>
+      <div class="row d-flex justify-content-center">
+        <div class="card rounded-4 shadow-lg border-white m-3 col-sm-10 col-md-6 col-lg-4 px-5 py-3">
+          <p class="text-center"></p>
+          <h3 class="text-center">Informe 1 - 01.01.2023</h3>
+          <td><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat venenatis mauris elementum fringilla. Sed vel erat pharetra, tincidunt justo eu, tincidunt lacus. Sed elit felis, porta a vestibulum sed....</p></td>
+          <div class="d-flex justify-content-between mt-3 align-items-center">
+            <td>
+              <div class="d-flex align-items-start">
+                <a href="#" class="fw-lighter">Ver informe completo</a>
+              </div>
+            </td>
+          </div>
+        </div>
+
+        <div class="card rounded-4 shadow-lg border-white m-3 col-sm-10 col-md-6 col-lg-4 px-5 py-3">
+          <p class="text-center"></p>
+          <h3 class="text-center">Informe 2 - 02.01.2023</h3>
+          <td><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat venenatis mauris elementum fringilla. Sed vel erat pharetra, tincidunt justo eu, tincidunt lacus. Sed elit felis, porta a vestibulum sed....</p></td>
+          <div class="d-flex justify-content-between mt-3 align-items-center">
+            <td>
+              <div class="d-flex align-items-start">
+                <a href="#" class="fw-lighter">Ver informe completo</a>
+              </div>
+            </td>
+          </div>
+        </div>
+
+        <div class="card rounded-4 shadow-lg border-white m-3 col-sm-10 col-md-6 col-lg-4 px-5 py-3">
+          <p class="text-center"></p>
+          <h3 class="text-center">Informe 3 - 03.01.2023</h3>
+          <td><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat venenatis mauris elementum fringilla. Sed vel erat pharetra, tincidunt justo eu, tincidunt lacus. Sed elit felis, porta a vestibulum sed....</p></td>
+          <div class="d-flex justify-content-between mt-3 align-items-center">
+            <td>
+              <div class="d-flex align-items-start">
+                <a href="#" class="fw-lighter">Ver informe completo</a>
+              </div>
+            </td>
+          </div>
+        </div>
+
+        <div class="card rounded-4 shadow-lg border-white m-3 col-sm-10 col-md-6 col-lg-4 px-5 py-3">
+          <p class="text-center"></p>
+          <h3 class="text-center">Informe 4 - 04.01.2023</h3>
+          <td><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat venenatis mauris elementum fringilla. Sed vel erat pharetra, tincidunt justo eu, tincidunt lacus. Sed elit felis, porta a vestibulum sed....</p></td>
+          <div class="d-flex justify-content-between mt-3 align-items-center">
+            <td>
+              <div class="d-flex align-items-start">
+                <a href="#" class="fw-lighter">Ver informe completo</a>
+              </div>
+            </td>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center m-5 col-sm-10 col-md-6 col-lg-4">
+          <a href="#" class="btn btn-primary w-100 shadow-lg">Ver todos los informes</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row my-5">
+        <h1 class="text-center">Equipo</h1>
+        <div class="boxesContainer">
+          <div class="d-flex flex-column">
+            <div id="prueba">
+              <div class="cardBox">
+                <div class="card1 m-2 rounded-4 shadow-lg">
+                  <div class="front-toto d-flex align-items-end" id="equipo">
+                    <h3 class="shadow-text">Luis Caputo</h3>
+                  </div>
+                  <div class="back">
+                    <h5>Descripcion</h5>
+                    <p class="fs-6">Economista. Fue jefe de trading para América Latina del JP Morgan y de Europa del Este y América Latina en el Deutsche Bank. En 2008 tomó el cargo como director del Deutsche Bank S.A. En 2015 asumió como Secretario de Finanzas de la Argentina, en 2017 como Ministro de Finanzas y en 2018 como Presidente del Banco Central.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cardBox">
+                <div class="card1 m-2 rounded-4 shadow-lg">
+                  <div class="front-santi d-flex align-items-end">
+                    <h3 class="shadow-text">Santiago Bausili</h3>
+                  </div>
+                  <div class="back">
+                    <h5>Descripcion</h5>
+                    <p class="fs-6">Economista especialista en Finanzas. Trabajó 11 años en JPMorgan y 9 años en Deutsche Bank, en Nueva York, especializándose en financiamiento de mercado de capitales y manejo de riesgos financieros. Fue Subsecretario de Financiamiento y Secretario de Finanzas de Argentina entre 2016 y 2019.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="prueba">
+              <div class="cardBox">
+                <div class="card1 m-2 rounded-4 shadow-lg">
+                  <div class="front-fede d-flex align-items-end">
+                    <h3 class="shadow-text">Federico Furiase</h3>
+                  </div>
+                  <div class="back">
+                    <h5>Descripcion</h5>
+                    <p class="fs-6">Magíster en Finanzas, UTDT. Lic. en Economía, UBA. Es profesor en la Maestría de Finanzas en la UTDT. Se especializa en tópicos de macroeconomía y finanzas, cuenta con casi 15 años de experiencia profesional en consultoría macroeconómica y realizando exposiciones en empresas/instituciones financieras.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cardBox">
+                <div class="card1 m-2 rounded-4 shadow-lg">
+                  <div class="front-martin d-flex align-items-end">
+                    <h3 class="shadow-text">Martin Vauthier</h3>
+                  </div>
+                  <div class="back">
+                    <h5>Descripcion</h5>
+                    <p class="fs-6">Economista. Es profesor en la Maestría de Finanzas en la UTDT. Se especializa en el análisis de la coyuntura económica nacional e internacional, con foco en tópicos monetarios, fiscales, financieros y proyecciones, participando en la confección de informes, presentaciones con clientes y valuación de proyectos de inversión.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cardBox">
+                <div class="card1 m-2 rounded-4 shadow-lg">
+                  <div class="front-felipe d-flex align-items-end">
+                    <h3 class="shadow-text">Felipe Berón</h3>
+                  </div>
+                  <div class="back">
+                    <h5>Descripcion</h5>
+                    <p class="fs-6">Licenciado en Economía de la Universidad de Buenos Aires. Magister de Finanzas en la Universidad Torcuato DiTella. CFA 2 Candidate.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wave" class="d-flex my-3">
+      <div class="container py-2">
+        <section class="contact">
+          <div class="container">
+            <div class="card rounded-4 p-5 m-5">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h2 id="contacto" class="contactanos">Contactanos</h2>
+                  <form action="/contactos" method="post">
+                    <div class="form-group py-2">
+                      <label for="contacto_nombre">Nombre</label>
+                      <input type="text" name="contacto[nombre]" id="contacto_nombre" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-group py-2">
+                      <label for="contacto_numero">Celular</label>
+                      <input type="text" name="contacto[numero]" id="contacto_numero" class="form-control" placeholder="Celular">
+                    </div>
+                    <div class="form-group py-2">
+                      <label for="contacto_email">Email</label>
+                      <input type="email" name="contacto[email]" id="contacto_email" class="form-control" placeholder="e-mail">
+                    </div>
+                    <div class="form-group py-2">
+                      <label for="contacto_descripcion">Descripción</label>
+                      <textarea name="contacto[descripcion]" id="contacto_descripcion" class="form-control" rows="5" placeholder="Mensaje que desea dejarnos"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn btn-primary w-100" id="submit-form">
+                  </form>
+                </div>
+                <div class="col-lg-5">
+                  <div id="map"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="custom-shape-divider-top-1682005190">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+
+
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibWFyY29zenViZXIiLCJhIjoiY2xneWN0Nmk5MDg3NDNnb2R6dDV4NWt6eCJ9.wnzd1IXEE7cGmtDXRJnKSg';
+
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-58.422225, -34.57756],
+        zoom: 15
+      });
+
+      var marker = new mapboxgl.Marker()
+        .setLngLat([-58.422225, -34.577561])
+        .addTo(map);
+    </script>
+  </main>
+
+  <footer>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 >Anker Latinoamérica</h3>
+          <p>Consultora de Servicios Financieros</p>
+          <p>Buenos Aires, Argentina</p>
+        </div>
+        <div class="col-md-4">
+          <h3 >Contacto</h3>
+          <p>Email: info@ankerlatam.com</p>
+          <p>Teléfono: +54.11-3989-1138</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Síguenos</h3>
+          <ul class="list-inline mt-3">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook fa-2x" style="color: #3b5998;"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-2x" style="color: #00aced;"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin fa-2x" style="color: #0e76a8;"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <hr style="border-top: 1px solid #FFFFFF;">
+          <p style="text-align:center;">©2021 por Anker Latinoamérica S.A. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

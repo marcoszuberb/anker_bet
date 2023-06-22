@@ -1,0 +1,251 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 250px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  color: white;
+  background-color: #00042b;
+  padding: 50px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+#nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  z-index: 1;
+}
+
+.carousel-inner img {
+  height: auto;
+  object-fit: cover;
+  max-height: 93vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  padding: 10px;
+}
+
+.custom-shape-divider-bottom-1682005190 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1682005190 svg {
+  position: relative;
+  display: block;
+  width: calc(129% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-bottom-1682005190 .shape-fill {
+  fill: #ffffff;
+}
+
+.custom-shape-divider-top-1682005190 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(0deg);
+}
+
+.custom-shape-divider-top-1682005190 svg {
+  position: relative;
+  display: block;
+  width: calc(129% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-top-1682005190 .shape-fill {
+  fill: #ffffff;
+}
+
+#wave {
+  position: relative;
+  background-color: rgb(1, 120, 189);
+  background: linear-gradient(225deg, rgba(1, 120, 189, 0.247), rgba(1, 120, 189, 1));
+  padding-bottom: 100px;
+}
+
+.shadow-text {
+  text-shadow: 2px 2px 4px #00000057;
+}
+
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
+
+@media (max-width: 767px) {
+  .boxesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardBox {
+    min-width: 350px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 767px) {
+  #prueba {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.cardBox:hover .card1 {
+  transform: rotateY(180deg);
+}
+
+.front-toto{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)), url("images/Luis_Caputo.jpg");
+  border-radius: 5%;
+  overflow: hidden;
+  background-size: cover;
+}
+.front-santi{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1)), url("images/santi.jpg");
+  border-radius: 5%;
+  overflow: hidden;
+  background-size: cover;
+}
+.front-fede{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1)), url("images/fede.jpeg");
+  border-radius: 5%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.front-martin{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1)), url("images/martin.jpeg");
+  border-radius: 5%;
+  overflow: hidden;
+  background-size: cover;
+}
+.front-felipe{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1)), url("images/felipe.jpeg");
+  border-radius: 5%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.card1 {
+  background: #222;
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+
+.front-toto,
+.front-santi,
+.front-fede,
+.front-martin,
+.front-felipe,
+.back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  width: 100%;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.contact {
+  padding: 80px 0;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .contactanos {
+    font-size: large;
+  }
+  footer {
+    font-size: small;
+    margin: auto;
+    height: auto;
+  }
+
+  .col-lg-7,
+  .col-lg-5 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
